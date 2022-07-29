@@ -1,0 +1,19 @@
+.con-btnGet {
+    width: 100%;
+}
+.btnGet {
+    width: 20%;
+    height: auto;
+    padding: 12px 45px;
+    font-size: 13px;
+    background-color: rgba(34,34,34, .9);
+    color: #fff;
+    border-radius: 2px;
+    letter-spacing: 2px;
+}
+
+@media screen and (max-width: 480px) {
+    .btnGet {
+        padding: 12px 3px;
+    }
+}
