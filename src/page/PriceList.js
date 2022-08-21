@@ -8,7 +8,7 @@ const ContainerList = styled.div`
   display: flex;
   justify-content: center;
 
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 790px) {
     flex-direction: column;
   }
 `

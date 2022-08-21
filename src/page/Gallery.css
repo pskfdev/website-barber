@@ -54,8 +54,14 @@
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
-@media screen and (max-width: 480px) { 
+@media screen and (max-width: 850px) { 
     .gallery-content {
         grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (max-width: 1230px) and (min-width: 850px) { 
+    .gallery-content {
+        grid-template-columns: 1fr 1fr;
     }
 }

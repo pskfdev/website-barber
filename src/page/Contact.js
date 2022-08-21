@@ -1,15 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import Header from "../component/Header.js";
 import styled from "styled-components";
 import { Container, Wrap } from "../styles/styledElement";
 import { ImPhone, ImMail4, ImLocation2 } from "react-icons/im";
 
-
 const WrapContact = styled(Wrap)`
   display: flex;
   margin-bottom: 80px;
 
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 750px) {
     flex-direction: column;
     margin-bottom: 40px;
   }
@@ -18,7 +17,7 @@ const WrapContact = styled(Wrap)`
 const ContactItems = styled(Wrap)`
   display: flex;
 
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 750px) {
     margin-bottom: 20px;
   }
 `;
@@ -27,7 +26,7 @@ const WrapForm = styled(Wrap)`
   display: flex;
   margin-bottom: 20px;
 
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 550px) {
     flex-direction: column;
   }
 `;
@@ -45,7 +44,7 @@ const Textarea = styled.textarea`
   padding: 10px;
   font-size: 12px;
 
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 550px) {
     margin: 20px auto;
   }
 `;
@@ -67,13 +66,17 @@ const Button = styled.button`
     transition: 0.4s ease-in-out;
   }
 
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 790px) {
     padding: 12px 3px;
   }
 `;
 
-
 function Contact() {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+
+
   return (
     <>
       <Header header="CONTACT" />
@@ -108,15 +111,15 @@ function Contact() {
           </ContactItems>
         </WrapContact>
         <Wrap>
-          <form action="">
+          <form action="http://localhost:3000" >
             <WrapForm>
               <Wrap>
-                <Input type="text" placeholder="Name" />
+                <Input type="text" name="name" placeholder="Name" onChange={(e) => {setName(e.target.value)}} />
                 <br />
                 <br />
-                <Input type="email" placeholder="Email" />
+                <Input type="email" name="email" placeholder="Email" onChange={(e) => {setEmail(e.target.value)}} />
               </Wrap>
-              <Textarea name="message" id="message" placeholder="Message" />
+              <Textarea name="message" id="message" placeholder="Message" onChange={(e) => {setMessage(e.target.value)}} />
             </WrapForm>
             <Wrap style={{ display: "flex", justifyContent: "space-between" }}>
               <p>All the fields are required</p>
@@ -134,7 +137,8 @@ function Contact() {
           style={{ border: 0 }}
           aria-hidden="false"
           tabIndex="0"
-          allowfullscreen="" />
+          allowfullscreen=""
+        />
       </Wrap>
     </>
   );

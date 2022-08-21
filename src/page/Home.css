@@ -1,162 +1,162 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 section .home {
-    width: 100%;
-    display: grid;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  width: 100%;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
 }
 
 .container-home {
-    width: 100%;
-    min-height: 100vh;
+  width: 100%;
+  min-height: 100vh;
 }
 
 .bg-home {
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 }
 
 .bg-home::after {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-image: url("../assets/bg1.avif");
-    background-attachment: fixed;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    background-size: cover;
-    filter: brightness(55%);
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url("../assets/bg1.avif");
+  background-attachment: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  background-size: cover;
+  filter: brightness(55%);
 }
 
 .home-logo {
-    width: 100%;
-    text-align: center;
-    position: relative;
-    top: 15rem;
+  width: 100%;
+  text-align: center;
+  position: relative;
+  top: 15rem;
 }
 
 .home-logo img {
-    width: 35rem;
+  width: 35rem;
 }
 
 .content-home {
-    width: 100%;
-    height: auto;
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-    grid-template-columns: 1fr 1fr;
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
 }
 
 .content-items1 {
-    width: 100%;
-    min-height: 600px;
-    background-image: url('../assets/bg-con1.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
+  width: 100%;
+  min-height: 600px;
+  background-image: url("../assets/bg-con1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .content-items2 {
-    width: 70%;
-    min-height: 600px;
-    text-align: center;
-    padding: 10rem 0;
-    margin: 0 auto;
+  width: 70%;
+  min-height: 600px;
+  text-align: center;
+  padding: 10rem 0;
+  margin: 0 auto;
 }
 
 .content-items2 h1 {
-    font-size: 2rem;
+  font-size: 2rem;
 }
 
 .content-items2 img {
-    width: 20%;
+  width: 20%;
 }
 
 .content-items3 {
-    width: 70%;
-    min-height: 600px;
-    text-align: center;
-    padding: 7rem 0;
-    margin: 0 auto;
+  width: 70%;
+  min-height: 600px;
+  text-align: center;
+  padding: 7rem 0;
+  margin: 0 auto;
 }
 
 .content-items3 h1 {
-    font-size: 2rem;
+  font-size: 2rem;
 }
 
 .content-items3 img {
-    width: 20%;
+  width: 20%;
 }
 
 .container-icon {
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-    padding: 2rem 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  padding: 2rem 0;
 }
 
 .items-icon img {
-    width: 50%;
+  width: 50%;
 }
 
 .content-items4 {
-    width: 100%;
-    min-height: 600px;
-    background-image: url('../assets/bg-con2.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
+  width: 100%;
+  min-height: 600px;
+  background-image: url("../assets/bg-con2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .content-home2 {
-    width: 100%;
-    min-height: 500px;
-    background-image: url('../assets/bg2.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: bottom;
-    color: #fff;
-    text-align: center;
-    margin: 0 auto;
+  width: 100%;
+  min-height: 500px;
+  background-image: url("../assets/bg2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  color: #fff;
+  text-align: center;
+  margin: 0 auto;
 }
 
 .items-home2 {
-    width: 40%;
-    padding-top: 8rem;
-    line-height: 3rem;
-    margin: 0 auto;
+  width: 40%;
+  padding-top: 8rem;
+  line-height: 3rem;
+  margin: 0 auto;
 }
 
 .items-home2 h4 {
-    font-size: 1.4rem;
-    letter-spacing: 10px;
+  font-size: 1.4rem;
+  letter-spacing: 10px;
 }
 
 .content-home3 {
-    width: 100%;
-    min-height: 500px;
-    color: #777;
-    text-align: center;
-    margin: 0 auto;
+  width: 100%;
+  min-height: 500px;
+  color: #777;
+  text-align: center;
+  margin: 0 auto;
 }
 
 .items-home3 {
-    width: 40%;
-    padding-top: 5rem;
-    line-height: 3rem;
-    margin: 0 auto;
+  width: 40%;
+  padding-top: 5rem;
+  line-height: 3rem;
+  margin: 0 auto;
 }
 
 .items-home3 img {
-    max-width: 25%;
+  max-width: 25%;
 }
 
 .content-home4 {
-    width: 100%;
+  width: 100%;
 }
 
 /* .content-home4 img {
@@ -164,65 +164,70 @@ section .home {
 } */
 
 .content-home5 {
-    width: 100%;
-    min-height: 500px;
-    color: #777;
-    text-align: center;
-    margin: 0 auto;
-    align-items: center;
-    padding: 2rem 0rem;
+  width: 100%;
+  min-height: 500px;
+  color: #777;
+  text-align: center;
+  margin: 0 auto;
+  align-items: center;
+  padding: 2rem 0rem;
 }
 
 .content-home5 h4 {
-    line-height: 10rem;
-    letter-spacing: 10px;
+  line-height: 10rem;
+  letter-spacing: 10px;
 }
 
 .container-items-home5 {
-    width: 100%;
-    display: flex;
-    justify-content: center;
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 .items-home5 {
-    width: 20%;
+  width: 20%;
 }
 
 .items-home5 h5 {
-    letter-spacing: 5px;
-    line-height: 5rem;
+  letter-spacing: 5px;
+  line-height: 5rem;
+}
+
+@media screen and (max-width: 550px) {
+  .home-logo {
+    top: 20rem;
+  }
+
+  .home-logo img {
+    width: 15rem;
+  }
+
+  .content-home {
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+  }
+
+  .items-home2 {
+    width: 90%;
+  }
+
+  .items-home3 {
+    width: 90%;
+  }
+
+  .container-items-home5 {
+    flex-direction: column;
+  }
+
+  .items-home5 {
+    width: 100%;
+    margin: 1rem 0rem;
+  }
 }
 
 
-
-@media screen and (max-width: 480px) {
-    .home-logo {
-        top: 20rem;
-    }
-
-    .home-logo img {
-        width: 15rem;
-    }
-
-    .content-home {
-        grid-template-rows: 1fr 1fr 1fr 1fr;
-        grid-template-columns: 1fr;
-    }
-
-    .items-home2 {
-        width: 90%;
-    }
-
-    .items-home3 {
-        width: 90%;
-    }
-
-    .container-items-home5 {
-        flex-direction: column;
-    }
-
-    .items-home5 {
-        width: 100%;
-        margin: 1rem 0rem;
-    }
+@media screen and (max-width: 1050px) and (min-width: 550px) {
+  .items-home5 {
+    width: 30%;
+  }
 }

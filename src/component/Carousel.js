@@ -35,7 +35,7 @@ function Carousel() {
         prevArrow: <Arrow />,
         responsive: [
             {
-                breakpoint: 1024,
+                breakpoint: 1050,
                 settings: {
                     slidesToShow: 3,
                     slidesToScroll: 3,
@@ -44,7 +44,7 @@ function Carousel() {
                 }
             },
             {
-                breakpoint: 600,
+                breakpoint: 790,
                 settings: {
                     slidesToShow: 2,
                     slidesToScroll: 2,
@@ -52,7 +52,7 @@ function Carousel() {
                 }
             },
             {
-                breakpoint: 480,
+                breakpoint: 550,
                 settings: {
                     slidesToShow: 1,
                     slidesToScroll: 1

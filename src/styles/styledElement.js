@@ -49,7 +49,7 @@ const Container = styled.div`
         letter-spacing: ${props => (props.primary ? "10px" : "")};
     }
 
-    @media screen and (max-width: 480px) {
+    @media screen and (max-width: 1400px) {
         width: 80%;
     }
 `
