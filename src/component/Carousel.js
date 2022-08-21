@@ -2,12 +2,15 @@ import React from 'react'
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-import './Carousel.css';
 import UseFetch from '../method/UseFetch';
+import OpenModal from '../method/OpenModal';
+import Modal from './Modal';
+
 
 function Carousel() {
 
-    const { data, error } = UseFetch('./Data.json');        //use function and variable UseFetch
+    const { data, error } = UseFetch('./Data.json');        //use function and variable UseFetch.js
+    const { imgNumber, modal, openModal, closeModal } = OpenModal('../method/OpenModal.js');  //use function and variable OpenModal.js
 
     if (error) {                        //check error
         console.log(error);
@@ -58,14 +61,17 @@ function Carousel() {
         ]
     };
     return (
-        <div className='con-carousel'>
+        <div className='con-carousel' style={{width: "100%", height: "500px"}}>
             <Slider {...settings}>
-                {data.map(item => (             //loop array in Data.json
-                    <div key={item.id}>
-                        <img src={item.url} />
-                    </div>
-                ))}
+                {data.map((item) => {          //loop array in Data.json
+                    return (
+                        <div key={item.id} onClick={ () => openModal(item.id) }>
+                            <img src={item.url} alt="" style={{width: "100%", height: "500px" , cursor: "pointer"}} />
+                        </div>
+                    )
+                })}             
             </Slider>
+            {modal && <Modal src={data[imgNumber].url} closeModal={closeModal}/>}
         </div>
     )
 }

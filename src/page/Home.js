@@ -1,15 +1,17 @@
 import React from 'react'
-import ButtonGet from '../component/ButtonGet';
 import Carousel from '../component/Carousel';
 import { FiAward, FiScissors, FiWatch, FiTruck } from "react-icons/fi";
+import { Btn } from '../styles/styledElement';
 import './Home.css';
 
+
 function Home() {
+
   return (
     <section className='home'>
       <div className='container-home bg-home'>
         <div className='home-logo'>
-          <img src='http://heis.pro/rhythm/rhythm-original/images/barbershop/image-1.png' />
+          <img src={'/img/logo-hero-bg.png'} />
         </div>
       </div>
 
@@ -20,27 +22,27 @@ function Home() {
           <h1>GET MODERN BARBERING EXPERIENCE FOR SERIOUS MEN</h1><br />
           <p>Marius auctor ex id urna faucibus. In maximus ligula semper metus lorem pellentesque mattis.Maecenas volutpat, diam enim sagittis quam, id porta quam. Lorem ipsum dolor sit amet, c-r adipiscing elit volutpat, accumsan ligula semper metus pellentesque mattis. Maecenas volutpat, diam enim. Donec vel ultricies dictum sem, eu aliquam.</p>
           <br />
-          <img src='http://heis.pro/rhythm/rhythm-original/images/photographer/signature.png' />
+          <img src={'/img/signature.png'} />
         </div>
         <div className='content-items3'>
           <h1>WE PROVIDE THE FULL LIST OF BARBERING SERVICES</h1><br />
           <div className='container-icon'>
             <div className='items-icon'>
-              <img src='http://heis.pro/rhythm/rhythm-original/images/barbershop/icon-1.png' />
+              <img src={'/img/icon-scissors.png'} />
               <h4>HAIRCUTS</h4>
             </div>
             <div className='items-icon'>
-              <img src='http://heis.pro/rhythm/rhythm-original/images/barbershop/icon-2.png' />
+              <img src={'/img/icon-razor.png'} />
               <h4>SHAVES</h4>
             </div>
             <div className='items-icon'>
-              <img src='http://heis.pro/rhythm/rhythm-original/images/barbershop/icon-3.png' />
+              <img src={'/img/icon-razor.png'} />
               <h4>KIDS STYLE</h4>
             </div>
           </div>
           <p>Maecenas volutpat, diam enim sagittis quam, id porta quam. Lorem ipsum dolor sit amet, c-r adipiscing elit volutpat, accumsan ligula semper metus pellentesque mattis.</p>
           <br /><br />
-          <ButtonGet nameBtn="GET PRICING" to="/price-list" />
+          <Btn primary to="/price-list">GET PRICING</Btn>
         </div>
         <div className='content-items4'>
         </div>
@@ -57,9 +59,9 @@ function Home() {
 
       <div className='content-home3'>
         <div className='items-home3'>
-          <img src='http://heis.pro/rhythm/rhythm-original/images/barbershop/image-2.png' />
+          <img src={'/img/barber-shop.png'} />
           <p>Phasellus luctus commodo ullamcorper a posuere rhoncus commodo elit. Aenean congue, risus utaliquam dapibus. Thanks!</p>
-          <ButtonGet nameBtn="BOOK AN APPOINTMENT" to="/" />
+          <Btn primary to="/">GET PRICING</Btn>
         </div>
       </div>
 
@@ -87,6 +89,7 @@ function Home() {
           </div>
         </div>
       </div>
+
     </section>
 
   )

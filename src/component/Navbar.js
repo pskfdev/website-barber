@@ -24,7 +24,7 @@ function Navbar() {
     <nav className={fix ? "nav fix" : "nav"}>
       <div className="logo">
         <Link to="/">
-          <img src="http://heis.pro/rhythm/rhythm-original/images/logo-white.png" alt="" />
+          <img src={'/img/logo-nav.png'} alt="" />
         </Link>
       </div>
 
@@ -54,11 +54,11 @@ function Navbar() {
             <a href='#' title='pinterest' target='_blank'><ImPinterest /></a>
           </div>
         </ul>
-        <div className={fix ? "toggle-menu fix" : "toggle-menu"} onClick={handleClick}>  
+        <div className={fix ? "toggle-menu fix" : "toggle-menu"} onClick={handleClick}>
           {click ? (<ImCross />) : (<ImMenu />)}                                         {/* //condition ? true : false. */}
         </div>
       </div>
-      
+
     </nav>
   )
 }

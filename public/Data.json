@@ -1,44 +1,44 @@
 [
     {
+        "id": 0,
+        "detail": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+        "title": "crewcut",
+        "price": "$18.00",
+        "url": "/img/crewcut.jpg"
+    },
+    {
         "id": 1,
-        "name": "Leanne Graham",
-        "username": "Bret",
-        "email": "Sincere@april.biz",
-        "url": "http://heis.pro/rhythm/rhythm-original/images/barbershop/gallery/1.jpg"
+        "detail": "Maecenas volutpat, diam enim sagittis quam, id porta quam.",
+        "title": "undercut",
+        "price": "$24.00",
+        "url": "/img/undercut.jpg"
     },
     {
         "id": 2,
-        "name": "Ervin Howell",
-        "username": "Antonette",
-        "email": "Shanna@melissa.tv",
-        "url": "http://heis.pro/rhythm/rhythm-original/images/barbershop/gallery/2.jpg"
+        "detail": "Sed id dolor consectetur fermentum nibh volutpat, accumsan.",
+        "title": "frenchcrop",
+        "price": "$26.00",
+        "url": "/img/frenchcrop.jpg"
     },
     {
         "id": 3,
-        "name": "Clementine Bauch",
-        "username": "Samantha",
-        "email": "Nathan@yesenia.net",
-        "url": "http://heis.pro/rhythm/rhythm-original/images/barbershop/gallery/3.jpg"
+        "detail": "In maximus ligula semper metus pellentesque mattis.",
+        "title": "quiff",
+        "price": "$25.00",
+        "url": "/img/quiff.jpg"
     },
     {
         "id": 4,
-        "name": "Patricia Lebsack",
-        "username": "Karianne",
-        "email": "Julianne.OConner@kory.org",
-        "url": "http://heis.pro/rhythm/rhythm-original/images/barbershop/gallery/4.jpg"
+        "detail": "lorem consectetur fermentum nibh volutpat, accumsan purus.",
+        "title": "skinhead",
+        "price": "$22.00",
+        "url": "/img/skinhead.jpg"
     },
     {
         "id": 5,
-        "name": "Chelsey Dietrich",
-        "username": "Kamren",
-        "email": "Lucio_Hettinger@annie.ca",
-        "url": "http://heis.pro/rhythm/rhythm-original/images/barbershop/gallery/5.jpg"
-    },
-    {
-        "id": 6,
-        "name": "Mrs. Dennis Schulist",
-        "username": "Leopoldo_Corkery",
-        "email": "Karley_Dach@jasper.info",
-        "url": "http://heis.pro/rhythm/rhythm-original/images/barbershop/gallery/6.jpg"
+        "detail": "Mrs. Dennis Schulist Sed id dolor consectetur fermentum nibh",
+        "title": "manbun",
+        "price": "$28.00",
+        "url": "/img/manbun.jpg"
     }
 ]

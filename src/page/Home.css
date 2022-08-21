@@ -9,6 +9,7 @@ section .home {
     display: grid;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
 }
+
 .container-home {
     width: 100%;
     min-height: 100vh;
@@ -24,7 +25,7 @@ section .home {
     position: absolute;
     width: 100%;
     height: 100%;
-    background-image: url('https://images.unsplash.com/photo-1503951914875-452162b0f3f1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80');
+    background-image: url("../assets/bg1.avif");
     background-attachment: fixed;
     top: 0;
     left: 0;
@@ -55,7 +56,7 @@ section .home {
 .content-items1 {
     width: 100%;
     min-height: 600px;
-    background-image: url('http://heis.pro/rhythm/rhythm-original/images/barbershop/split-section-1.jpg');
+    background-image: url('../assets/bg-con1.jpg');
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -106,7 +107,7 @@ section .home {
 .content-items4 {
     width: 100%;
     min-height: 600px;
-    background-image: url('http://heis.pro/rhythm/rhythm-original/images/barbershop/split-section-2.jpg');
+    background-image: url('../assets/bg-con2.jpg');
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -114,7 +115,7 @@ section .home {
 .content-home2 {
     width: 100%;
     min-height: 500px;
-    background-image: url('http://heis.pro/rhythm/rhythm-original/images/barbershop/section-bg-1.jpg');
+    background-image: url('../assets/bg2.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom;
@@ -129,7 +130,8 @@ section .home {
     line-height: 3rem;
     margin: 0 auto;
 }
-.items-home2 h4{
+
+.items-home2 h4 {
     font-size: 1.4rem;
     letter-spacing: 10px;
 }
@@ -186,7 +188,7 @@ section .home {
     width: 20%;
 }
 
-.items-home5 h5{
+.items-home5 h5 {
     letter-spacing: 5px;
     line-height: 5rem;
 }
@@ -218,6 +220,7 @@ section .home {
     .container-items-home5 {
         flex-direction: column;
     }
+
     .items-home5 {
         width: 100%;
         margin: 1rem 0rem;
